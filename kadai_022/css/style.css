@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	style
+-------------------------------------------------------- */
+  html *{
+    /* border: #666666 1px solid; */
+    text-align: center;
+  }
+  p, a{
+    font-size: 20px;
+  }
+  body{
+    font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
+    -webkit-text-size-adjust: 100%;
+    color: #505050;
+  }
+  header, main, footer{
+    width: 100%;
+    max-width: 100%; /* レスポンシブ対応 */
+  }
+
+/* header */
+  header{
+    background-color: rgb(244, 79, 79);
+    margin-bottom: 20px;
+  }
+  h1{
+    color: rgb(255, 255, 255);
+  }
+  h2{
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 3px dotted rgb(236, 122, 122);
+  }
+  h2::before{
+    content: "●" ;
+    color: rgb(239, 111, 139);
+  }
+
+/* main */
+  main{
+    padding: 10px;
+  }
+  main #parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main #parent .contents{
+    flex-basis: 30%;
+    border: 3px solid rgb(238, 204, 204);
+    padding: 10px 15px;
+    margin: 20px 0;
+  }
+  main #parent .contents p{
+    padding-top: 10px;
+  }
+  main #parent .contents p:nth-child(3)::first-letter {
+    font-weight: 900;
+    color: rgb(97, 206, 249);
+  }
+  main #parent .contents img{
+    width: 70%;
+    margin: 10px auto;
+  }
+
+/* footer */
+  footer{
+    background-color: rgb(244, 79, 79);
+  }
+  footer p{
+    padding: 10px 0;
+    text-align: center;
+  }
+  footer p a{
+    color: rgb(255, 255, 255);
+  }
+  /* 未訪問のリンク */
+  footer p a:link{
+    color: rgb(193, 234, 251);
+  }
+  footer p a:hover,
+  footer p a:active{
+    color: rgb(245, 178, 168);
+  }
+
+@media screen and (max-width: 768px){
+  main #parent{
+    display: block;
+  }
+  }
