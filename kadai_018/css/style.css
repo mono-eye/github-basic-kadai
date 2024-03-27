@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	style
+-------------------------------------------------------- */
+ 
+  body{
+  font-family:'メイリオ','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック',sans-serif;
+  -webkit-text-size-adjust: 100%;
+  background-color: #ffffff;
+  }
+  #top{
+  width: 800px;
+  max-width: 100%; /* レスポンシブ対応 */
+  margin: 0 auto;
+  background-color: #dcc9f4;
+  padding: 20px ;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1%;
+  }
+  #top>p.top-child{
+    width: calc(60% / 3);
+    background-color: #ffd9df;
+    text-align: center;
+  }
+
+  #main{
+    width: 800px;
+    height: 800px;
+    margin: 20px auto;
+    background-color: #ffd9df ;
+    position: relative;
+  }
+  #middle-child01, #middle-child02, #middle-child03{
+    width: 200px;
+    height: 200px;
+    background-color: #87ceeb;
+    position: absolute;
+  }
+  #middle-child01{
+    top: 100px;
+    left: 100px;
+  }
+  #middle-child02{
+    top: 300px;
+    left: 300px;
+  }
+  #middle-child03{
+    top: 500px;
+    left: 500px;
+  }
+
+  #bottom{
+    width: 800px;
+    height: 300px;
+    margin: 0 auto 20px;
+    background-color: #87ceeb ;
+    position: relative;
+  }
+  #bottom-child01, #bottom-child02, #bottom-child03{
+    width: 400px;
+    height: 100.1px;
+    background-color: #e5dcf0;
+    position: absolute;
+  }
+  #bottom-child01{
+    top: 0;
+    left: 0;
+  }
+  #bottom-child02{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #bottom-child03{
+    right: 0;
+    bottom: 0;
+  }
